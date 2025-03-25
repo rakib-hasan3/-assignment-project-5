@@ -1,6 +1,12 @@
 
 // background color change
-
+function  randomBgColor() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+   
+      document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+  }
   
   // discover
   const dis= document.getElementById('discover')
@@ -16,6 +22,7 @@
     const mobileButton =  document.getElementById('btn-card1')
           .addEventListener('click', function(){
               alert('Board Update Successfully')
+              
           const task =  document.getElementById('task')
           task.innerHTML='05';
           const number =document.getElementById('number')
